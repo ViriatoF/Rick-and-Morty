@@ -1,0 +1,13 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  gap: 2em;
+}
+
+main>h1{
+  color: var(--third-color);
+  font-size: 4em;
+}

@@ -1,0 +1,17 @@
+header {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+}
+
+header>img{
+  height: 5em;
+}
+
+header>nav>ul{
+  display: flex;
+  gap: 2em;
+}
