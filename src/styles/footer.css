@@ -1,0 +1,9 @@
+footer{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+footer>img{
+  height:7em;
+}
