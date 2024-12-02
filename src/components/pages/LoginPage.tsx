@@ -1,14 +1,24 @@
+import "../../styles/login-form.css";
+
 function LoginPage() {
 	return (
-		<form action="">
-			<label htmlFor="">Your email</label>
-			<input type="email" placeholder="Your email" required />
+		<section className="form-container">
+			<form action="" id="login-form">
+				<label className="label-form" htmlFor="">
+					Your email
+				</label>
+				<input type="email" placeholder="Your email" required />
 
-			<label htmlFor="">Your password</label>
-			<input type="password" placeholder="***********" required />
+				<label className="label-form" htmlFor="">
+					Your password
+				</label>
+				<input type="password" placeholder="***********" required />
 
-			<button type="submit">Connexion</button>
-		</form>
+				<button id="submit-button" type="submit">
+					Connexion
+				</button>
+			</form>
+		</section>
 	);
 }
 
