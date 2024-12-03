@@ -1,13 +1,26 @@
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em;
-  gap: 2em;
+  padding: 3em 13em;
+  gap: 3em;
 }
 
 main>h1{
   color: var(--third-color);
   font-size: 4em;
+}
+
+#search-bar {
+  width: 30%;
+  padding: 0.4em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#characters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
 }

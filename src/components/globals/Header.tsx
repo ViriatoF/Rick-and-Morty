@@ -8,12 +8,12 @@ function Header() {
 				<img src="rick_logo.png" alt="Website logo" />
 				<nav>
 					<ul>
-						<NavLink to={"/"}>
-							<li>Accueil</li>
-						</NavLink>
-						<NavLink to={"login"}>
-							<li>Connection</li>
-						</NavLink>
+						<li>
+							<NavLink to={"/"}>Accueil</NavLink>
+						</li>
+						<li>
+							<NavLink to={"login"}>Connection</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</header>
