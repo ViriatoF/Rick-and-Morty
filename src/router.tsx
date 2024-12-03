@@ -11,6 +11,7 @@ const router = createBrowserRouter([
 			{
 				path: "",
 				element: <HomePage />,
+				loader: () => fetch("https://rickandmortyapi.com/api/character"),
 			},
 			{
 				path: "login",

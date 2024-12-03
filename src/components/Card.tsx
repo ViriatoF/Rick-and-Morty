@@ -1,11 +1,11 @@
 import "../styles/card.css";
 
-function Card() {
+function Card({ image, name }: RickData) {
 	return (
 		<>
 			<figure>
-				<img src="rick_sanchez.png" alt="Rick Sanchez" />
-				<figcaption>Rick Sanchez</figcaption>
+				<img src={image} alt={name} />
+				<figcaption>{name}</figcaption>
 			</figure>
 		</>
 	);
