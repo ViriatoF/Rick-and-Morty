@@ -9,8 +9,13 @@ figure{
   background-color: var(--second-color);
 }
 
-figure>img {
-  height:  80%;
+figure a {
+  height: 80%;
+  width: 100%;
+}
+
+figure a img {
+  height:  100%;
   width: 100%;
   border-radius: 16px 16px 0 0;
 }

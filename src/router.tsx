@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import HomePage from "./components/pages/HomePage";
 import LoginPage from "./components/pages/LoginPage";
+import Detail from "./components/pages/Detail";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,12 @@ const router = createBrowserRouter([
 			{
 				path: "login",
 				element: <LoginPage />,
+			},
+			{
+				path: "detail/:id",
+				element: <Detail />,
+				loader: ({ params }) =>
+					fetch(`https://rickandmortyapi.com/api/character/${params.id}`),
 			},
 		],
 	},

@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "../styles/card.css";
 
-function Card({ image, name }: RickData) {
+function Card({ image, name, id }: RickData) {
 	return (
 		<>
 			<figure>
-				<img src={image} alt={name} />
+				<NavLink to={`detail/${id}`}>
+					<img src={image} alt={name} />
+				</NavLink>
 				<figcaption>{name}</figcaption>
 			</figure>
 		</>
