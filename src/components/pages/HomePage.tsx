@@ -5,19 +5,26 @@ import { useLoaderData } from "react-router-dom";
 function HomePage() {
 	const data = useLoaderData();
 	const characters = data.results;
-	console.log(characters);
 	return (
 		<>
 			<main>
 				<h1>Rick and Morty</h1>
-				<input type="text" placeholder="Recherchez un personnage..." />
-				{characters.map((element: RickData) => {
-					console.log(element);
-
-					return (
-						<Card key={element.id} image={element.image} name={element.name} />
-					);
-				})}
+				<input
+					type="text"
+					id="search-bar"
+					placeholder="Recherchez un personnage..."
+				/>
+				<section id="characters-section">
+					{characters.map((element: RickData) => {
+						return (
+							<Card
+								key={element.id}
+								image={element.image}
+								name={element.name}
+							/>
+						);
+					})}
+				</section>
 			</main>
 		</>
 	);

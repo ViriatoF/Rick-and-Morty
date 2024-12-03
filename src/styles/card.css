@@ -1,13 +1,12 @@
 figure{
   height: 20em;
-  width: 20em;
+  width: 17em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 16px;
   background-color: var(--second-color);
-  padding: 2em;
 }
 
 figure>img {
@@ -18,4 +17,7 @@ figure>img {
 
 figcaption{
   color: var(--third-color);
+  margin: 1em;
+  font-family: var(--second-font);
+  font-size: 1.2em;
 }
