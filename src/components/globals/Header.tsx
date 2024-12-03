@@ -5,7 +5,7 @@ function Header() {
 	return (
 		<>
 			<header>
-				<img src="rick_logo.png" alt="Website logo" />
+				<img src="../rick_logo.png" alt="Website logo" />
 				<nav>
 					<ul>
 						<li>

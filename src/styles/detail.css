@@ -1,0 +1,23 @@
+#detail-character {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--second-color);
+  gap: 2em;
+  border-radius: 8px;
+  color: var(--third-color);
+}
+
+#detail-character img {
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+#detail-main {
+  height: 80vh;
+}
+
+#character-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

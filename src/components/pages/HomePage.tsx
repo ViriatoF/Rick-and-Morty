@@ -21,6 +21,7 @@ function HomePage() {
 								key={element.id}
 								image={element.image}
 								name={element.name}
+								id={element.id}
 							/>
 						);
 					})}
