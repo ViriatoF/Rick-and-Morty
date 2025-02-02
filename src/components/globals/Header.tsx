@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import "../../styles/header.css";
+import useTheme from "../../utils/useTheme";
 
 function Header() {
+	const { theme, setTheme } = useTheme();
+
 	return (
 		<>
 			<header>
@@ -13,6 +16,9 @@ function Header() {
 						</li>
 						<li>
 							<NavLink to={"login"}>Connection</NavLink>
+						</li>
+						<li>
+							<input type="checkbox" onClick={() => setTheme(!theme)} />
 						</li>
 					</ul>
 				</nav>

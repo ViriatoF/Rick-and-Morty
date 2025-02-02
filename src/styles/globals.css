@@ -39,3 +39,20 @@ a {
 button, input, label, a {
 	font-family: var(--second-font);
 }
+
+.light {
+	background-color: var(--third-color);
+	& h1, h2, h3 {
+		color: var(--primary-color);
+	}
+	& figure {
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	& figure:hover {
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	}
+}
+
+main {
+	transition: 200ms ease;
+}
