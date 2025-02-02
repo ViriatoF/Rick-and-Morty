@@ -1,13 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import "../../styles/detail.css";
+import useTheme from "../../utils/useTheme";
 
 function Detail() {
 	const data = useLoaderData();
-	console.log(data);
+	const { theme } = useTheme();
 
 	return (
 		<>
-			<main id="detail-main">
+			<main className={`detail-main ${theme && "light"} `}>
 				<section id="detail-character">
 					<aside>
 						<img src={data.image} alt={`Representation of ${data.name}`} />
